@@ -27,6 +27,35 @@ O servidor expõe `GET /health`, `GET /scene_info`, `GET /collections` e `POST /
 
 Mantenha o Blender aberto e peça ao agente para executar operações no Blender MCP. O bridge executa scripts Python na thread principal do Blender. Use somente em ambiente local confiável; não exponha a porta 9876 à rede.
 
+### Prompt de ativação para um novo chat
+
+```text
+Use o Blender MCP Bridge local em http://127.0.0.1:9876.
+Trabalhe diretamente na cena aberta do Blender usando Python via /execute.
+Antes de alterar, consulte /scene_info e liste os objetos relevantes.
+Execute as operações na cena, valide o resultado e confirme novamente os objetos e dimensões.
+Use os workflows Blender3D apropriados para modelagem, materiais, UV, render, validação e exportação.
+Não apenas explique os passos: execute-os no Blender.
+```
+
+Exemplos de comandos no novo chat:
+
+```text
+Crie um cubo chamado TestCube com dimensões 100 × 100 × 100 mm,
+aplique a escala, coloque-o na coleção TEST e confirme sua existência.
+```
+
+```text
+Edite TestCube, aplique bevel de 3 mm, atribua um material azul
+e confirme dimensões e material.
+```
+
+```text
+Liste TestCube, remova somente esse objeto e confirme que ele não existe mais.
+```
+
+Confirme a conexão com `GET /health` e a cena com `GET /scene_info` antes de operações importantes.
+
 ## Workflows Blender
 
 O pacote documenta e suporta workflows para as skills Blender disponíveis: modelagem e hard surface, geometry nodes, materiais, UV, Texture Paint, iluminação, render, otimização, validação, impressão 3D e exportação para Unity, Unreal e Godot. As skills são instruções de trabalho; recursos externos como GPU, Ollama, APIs e plugins continuam sendo dependências opcionais.
