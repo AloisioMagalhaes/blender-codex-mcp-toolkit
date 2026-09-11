@@ -65,3 +65,6 @@ O pacote documenta e suporta workflows para as skills Blender disponíveis: mode
 - `addon/`: bridge Blender MCP.
 - `assets/`: exemplo Blender com Suzanne usando material procedural de água.
 - `docs/`: notas de integração e troubleshooting.
+## Prompts especializados
+
+Consulte [`docs/llm-prompts.md`](docs/llm-prompts.md) para escolher o LLM e o prompt adequado por categoria de skill Blender. O catálogo cobre modelagem, hard-surface, personagens, escultura, referências, materiais, Geometry Nodes, rigging, UV, exportação, renderização e QA.
