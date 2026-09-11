@@ -1,0 +1,3 @@
+eevee: OK 0.74s C:\Users\educa\Desktop\prj\blender-codex-mcp-toolkit\terrain\delta_parnaiba\blender\validation_eevee.png
+workbench: OK 0.11s C:\Users\educa\Desktop\prj\blender-codex-mcp-toolkit\terrain\delta_parnaiba\blender\validation_workbench.png
+cycles: OK 25.45s C:\Users\educa\Desktop\prj\blender-codex-mcp-toolkit\terrain\delta_parnaiba\blender\validation_cycles.png
